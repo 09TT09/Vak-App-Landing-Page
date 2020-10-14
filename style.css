@@ -1,0 +1,25 @@
+/* General Style */
+
+body{
+    margin: 0;
+    font-family: Arial;
+    background-color: black;
+}
+
+/* index */
+
+.image_soignants{
+    width: 100%;
+    position: absolute;
+}
+
+.logo{
+    height: 8vw;
+    position: absolute;
+}
+
+.text_image{
+    position: absolute;
+    margin-top: 25vh;
+    color: white;
+}
