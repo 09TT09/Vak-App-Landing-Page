@@ -13,12 +13,34 @@
   <main>
 
     <section class="front">
-      <img class="front_image" src="national-cancer-institute-opti.jpg" alt="Photo de médecins" />
+      <img class="front_image" src="medecin_modif.jpg" alt="Photo d'un médecin" />
       <h1 class="text_image">Rejoignez le mouvement Vakapp</h1>
-    </section>
-    <img class="logo" src="Logo_Vak.png" alt="Logo de VakApp" />
 
-    <section class="container first_container">
+      <!--<div class="form_div">
+        <p class="form_text">Envoyez nous vos informations et recevez un document détaillé<p>
+        <input class="email" type="mail" name="email" placeholder="Email" />
+        <input class="valid" type="submit" />
+      <div>-->
+
+      <div class="div_button">
+        <button class="button_info" id="form_nav">Formulaire</button>
+        <button class="button_info">Informations</button>
+      </div>
+
+      <img class="button_navigation" height="50" src="navigation.png" alt="Boutton de navigation" id="nav"/>
+
+    </section>
+
+    <img class="logo" src="Logo_Vak.png" alt="Logo de VakApp"/>
+
+    <section class="container first_container" id="first_container">
+
+      <div class="div_button_mobile">
+        <button class="button_info">Autres</button>
+        <button class="button_info">Informations</button>
+      </div>
+
+      <hr class="division division_show" />
 
       <article>
         <h2>L'application qui facilite les vacations</h2>
@@ -91,18 +113,21 @@
     <section class="container">
     <p class="reseaux_text">Retrouvez nous sur les réseaux :</p>
       <div class="reseaux_sociaux">
-        <div>
+        <div class="div_reseaux">
           <a href="#"><img class="reseaux_logo flex_images" src="facebook-2.png" alt="logo facebook" /></a>
+          <a href="#"><p>facebook</p></a>
         </div>
-        <div>
+        <div class="div_reseaux">
           <a href="#"><img class="reseaux_logo flex_images" src="linkedin-logo.png" alt="logo linkedin" /></a>
+          <a href="#"><p>Linkedin</p></a>
         </div>
-        <div>
+        <div class="div_reseaux">
           <a href="#"><img class="reseaux_logo flex_images" src="tiktok.png" alt="logo tiktok" /></a>
+          <a href="#"><p>Tik Tok</p></a>
         </div>
       </div>
     </section>
-    <div class="form">
+    <div class="form" id="form">
       <h2 class="text_form">Soyez le premier à être informé</h2>
       <form action="form.php" method="post">
         <div>
@@ -127,3 +152,16 @@
 </body>
 
 </html>
+
+<script type-"text/javascript">
+
+document.getElementById('nav').addEventListener('click', function(event) {
+  document.getElementById('first_container').scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.getElementById('form_nav').addEventListener('click', function(event) {
+  document.getElementById('form').scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+
+</script>

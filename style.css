@@ -13,16 +13,84 @@ body {
 .front_image {
   width: 100%;
   opacity: 0.8;
-  border-bottom: solid #5ac3cf 3px;
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 0 2px 8px black;
+  box-shadow: 0 2px 8px gray;
 }
 
 .logo {
-  height: 8vw;
+  height: 5vw;
   position: absolute;
   top: 1%;
 }
+
+.div_button{
+  position: absolute;
+  top: 63%;
+  width: 100%;
+  text-align: center;
+}
+
+.button_info{
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 30px;
+  transition: .25s;
+  background: linear-gradient(-45deg, blueviolet, #5ac3cf);
+  margin: 5px;
+  color: white;
+}
+
+.button_info:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
+
+.button_navigation{
+  position: absolute;
+  top: 80%;
+  left: calc(50% - 25px);
+}
+
+.button_navigation:hover{
+  transform: scale(1.2,1.2);
+}
+
+/*
+.form_text{
+  color: white;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px black;
+}
+
+.email {
+  left: calc(50% - 300px);
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border: 0;
+  padding: 0 5px 0 5px;
+  min-width: 150px;
+  box-shadow: 1px 1px 4px black;
+}
+
+.valid {
+  margin-top: 0px;
+  width: 120px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  transition: .25s;
+  background-color: white;
+  box-shadow: 1px 1px 4px black;
+}
+
+.valid:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+  background-color: #5ac3cf;
+  box-shadow: 2px 2px 4px black;
+}*/
 
 .text_image {
   position: absolute;
@@ -31,6 +99,7 @@ body {
   width: 100%;
   text-align: center;
   color: white;
+  text-shadow: 0px 0px 10px black;
 }
 
 .container {
@@ -101,13 +170,12 @@ hr {
   height: 3px;
   border: 0;
   border-radius: 10px;
-  background-color: #5ac3cf;
-  color: #5ac3cf;
+  background: linear-gradient(-45deg, blueviolet, #5ac3cf);
   box-shadow: 1px 1px 1px gray;
 }
 
 .valeur {
-  background-color: #5ac3cf;
+  background: linear-gradient(-45deg, blueviolet, #5ac3cf);
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 4px gray;
@@ -123,8 +191,17 @@ hr {
   color: white;
 }
 
+.div_reseaux{
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .form {
-  background-color: #5ac3cf;
+  background: linear-gradient(45deg, blueviolet, #5ac3cf);
   padding: 80px 100px;
   box-shadow: 2px 2px 4px gray;
 }
@@ -155,7 +232,7 @@ hr {
   margin-top: 30px;
   width: 120px;
   height: 30px;
-  border: solid white 1px;
+  border: 0;
   border-radius: 15px;
   transition: .25s;
   background-color: white;
@@ -164,7 +241,7 @@ hr {
 .valid:hover{
   transform: scale(1.1,1.1);
   cursor: pointer;
-  box-shadow: 2px 2px 4px black;
+  background-color: #5ac3cf;
 }
 
 .form > form > div {
@@ -183,9 +260,20 @@ hr {
   transform: scale(1.15,1.15);
 }
 
+.div_button_mobile{
+  display: none;
+}
+
+.division_show{
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   h2{
     text-align: center;
+  }
+  .logo {
+    height: 8vw;
   }
   .text_image {
     font-size: 2rem;
@@ -224,6 +312,20 @@ hr {
     margin-top: 60px;
   }
   .flex_div_margin{
+    margin-top: 30px;
+  }
+  .div_button{
+    display: none;
+  }
+  .div_button_mobile{
+    display: block;
+    text-align: center;
+  }
+  .button_navigation{
+    display: none;
+  }
+  .division_show{
+    display: block;
     margin-top: 30px;
   }
 }
