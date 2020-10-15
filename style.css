@@ -5,14 +5,13 @@ body {
 
 .front {
   position: relative;
-  background-color: gray;
-  border-radius: 0px 0px 10px 10px;
+  background-color: black;
   display: flex;
 }
 
 .front_image {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
   box-shadow: 0 2px 8px gray;
 }
 
@@ -30,17 +29,30 @@ body {
 }
 
 .button_info{
-  width: 150px;
-  height: 40px;
+  width: 300px;
+  height: 45px;
   border: 0;
   border-radius: 30px;
   transition: .25s;
   background: linear-gradient(-45deg, blueviolet, #5ac3cf);
-  margin: 5px;
+  margin: 5px 25px 5px 25px;
   color: white;
+  font-size: 17px;
 }
 
-.button_info:hover{
+.button_info_2{
+  width: 300px;
+  height: 45px;
+  border: 0;
+  border-radius: 30px;
+  transition: .25s;
+  background: linear-gradient(-45deg, #5ac3cf, blueviolet);
+  margin: 5px 25px 5px 25px;
+  color: white;
+  font-size: 17px;
+}
+
+.button_info:hover, .button_info_2:hover{
   transform: scale(1.1,1.1);
   cursor: pointer;
 }
@@ -49,6 +61,12 @@ body {
   position: absolute;
   top: 80%;
   left: calc(50% - 25px);
+  transition: .25s;
+  animation: animation_button ease-in-out 1.5s infinite;
+}
+
+@keyframes animation_button{
+  50%{transform: translate(0, 15px);} 
 }
 
 .button_navigation:hover{
@@ -99,7 +117,7 @@ body {
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.2);
 }
 
 .container {
@@ -137,9 +155,45 @@ body {
 }
 
 .reseaux_sociaux{
-  display: flex;
-  margin: 70px 0 100px 0;
-  justify-content: space-around; 
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  height: 300px;
+  vertical-align: top;
+}
+
+.reseaux_text_1{
+  margin-bottom: 40px;
+}
+
+.reseaux_text_2{
+  margin-bottom: 80px;
+}
+
+.diviseur{
+  display: inline-block;
+  margin-top: 50px;
+  height: 230px;
+  width: 4px;
+  background: linear-gradient(-45deg, #5ac3cf, blueviolet);
+  vertical-align: middle;
+}
+
+.button_info_google_form{
+  width: 180px;
+  height: 45px;
+  border: 0;
+  border-radius: 30px;
+  transition: .25s;
+  background: linear-gradient(-45deg, #5ac3cf, blueviolet);
+  color: white;
+  font-size: 17px;
+  margin: auto 25px auto 25px;
+}
+
+.button_info_google_form:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
 }
 
 .register_images p {
@@ -193,6 +247,7 @@ hr {
 
 .div_reseaux{
   text-align: center;
+  display: inline-block;
 }
 
 a {
@@ -268,6 +323,21 @@ a {
   display: none;
 }
 
+.reseaux_logo{
+  margin: 0 50px 0 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .reseaux_logo{
+    width: 70px;
+  }
+
+  .button_info_google_form{
+    width: 140px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   h2{
     text-align: center;
@@ -276,7 +346,7 @@ a {
     height: 8vw;
   }
   .text_image {
-    font-size: 2rem;
+    font-size: 1.1rem;
     top: 30%;
   }
   .register_images {
@@ -328,4 +398,40 @@ a {
     display: block;
     margin-top: 30px;
   }
+  .button_info, .button_info_2{
+    margin: 5px;
+  }
+  .diviseur{
+    display: none;
+  }
+  .reseaux_sociaux{
+    width: 100%;
+    height: auto;
+  }
+  .button_info_google_form{
+    margin: 10px;
+  }
+  .reseaux_text_1{
+    margin: 40px;
+  }
+  .reseaux_text_2{
+    margin: 40px;
+  }
+  .reseaux_logo{
+    margin: 0;
+  }
+  .div_reseaux_0{
+    display: block;
+  }
+  .button_info_google_form{
+    width: 180px;
+    font-size: 14px;
+  }
+  .div_reseaux{
+    margin: 0 10px 0 10px;
+  }
 }
+
+/* je suis soignant, je suis une structure de santé
+image change
+virer avis

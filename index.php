@@ -14,7 +14,7 @@
 
     <section class="front">
       <img class="front_image" src="medecin_modif.jpg" alt="Photo d'un médecin" />
-      <h1 class="text_image">Rejoignez le mouvement Vakapp</h1>
+      <h1 class="text_image">VakApp l'application qui met en relation<br /> les structures hospitalière et le personnel vacataire</h1>
 
       <!--<div class="form_div">
         <p class="form_text">Envoyez nous vos informations et recevez un document détaillé<p>
@@ -23,8 +23,8 @@
       <div>-->
 
       <div class="div_button">
-        <button class="button_info" id="form_nav">Formulaire</button>
-        <button class="button_info">Informations</button>
+        <button class="button_info" id="form_nav" onclick="location.href='https://forms.gle/TDaJYT8JiuBUC4hf9'">Je suis soignant</button>
+        <button class="button_info_2" onclick="location.href='https://forms.gle/kQReDFH7fVB53ftF8'">Je suis une structure de santé</button>
       </div>
 
       <img class="button_navigation" height="50" src="navigation.png" alt="Boutton de navigation" id="nav"/>
@@ -111,22 +111,41 @@
       </div>
     </section>
     <section class="container">
-    <p class="reseaux_text">Retrouvez nous sur les réseaux :</p>
-      <div class="reseaux_sociaux">
-        <div class="div_reseaux">
-          <a href="#"><img class="reseaux_logo flex_images" src="facebook-2.png" alt="logo facebook" /></a>
-          <a href="#"><p>facebook</p></a>
+
+        <div class="reseaux_sociaux">
+
+          <p class="reseaux_text reseaux_text_1">Retrouvez nous sur les réseaux :</p>
+
+          <div class="div_reseaux">
+            <a href="https://www.facebook.com/VakApp-Recherche-de-travail-pour-vacataire-m%C3%A9dical-111154137433328"><img class="reseaux_logo flex_images" src="facebook-2.png" alt="logo facebook" /></a>
+            <a href="https://www.facebook.com/VakApp-Recherche-de-travail-pour-vacataire-m%C3%A9dical-111154137433328"><p>facebook</p></a>
+          </div>
+
+          <div class="div_reseaux">
+            <a href="https://www.linkedin.com/company/69200438/"><img class="reseaux_logo flex_images" src="linkedin-logo.png" alt="logo linkedin" /></a>
+            <a href="https://www.linkedin.com/company/69200438/"><p>Linkedin</p></a>
+          </div>
+
+
         </div>
-        <div class="div_reseaux">
-          <a href="#"><img class="reseaux_logo flex_images" src="linkedin-logo.png" alt="logo linkedin" /></a>
-          <a href="#"><p>Linkedin</p></a>
+
+        <div class="diviseur"></div>
+
+        <div class="reseaux_sociaux">
+          <p class="reseaux_text reseaux_text_2">Inscrivez vous maintenant et indiquez votre rôle,<br /> pour être parmis les premier à y avoir accès :</p>
+
+          <div class="div_reseaux div_reseaux_0">
+            <button class="button_info_google_form" onclick="location.href='https://forms.gle/TDaJYT8JiuBUC4hf9'">Soignant</button>
+          </div>
+
+          <div class="div_reseaux div_reseaux_0">
+            <button class="button_info_google_form" onclick="location.href='https://forms.gle/kQReDFH7fVB53ftF8'">Structure de santé</button>
+          </div>
+
         </div>
-        <div class="div_reseaux">
-          <a href="#"><img class="reseaux_logo flex_images" src="tiktok.png" alt="logo tiktok" /></a>
-          <a href="#"><p>Tik Tok</p></a>
-        </div>
-      </div>
+
     </section>
+
     <div class="form" id="form">
       <h2 class="text_form">Soyez le premier à être informé</h2>
       <form action="form.php" method="post">
@@ -143,6 +162,8 @@
       </form>
     </div>
 
+
+
   </main>
 
   <footer>
@@ -158,10 +179,5 @@
 document.getElementById('nav').addEventListener('click', function(event) {
   document.getElementById('first_container').scrollIntoView({ behavior: "smooth", block: "start" });
 });
-
-document.getElementById('form_nav').addEventListener('click', function(event) {
-  document.getElementById('form').scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
 
 </script>
