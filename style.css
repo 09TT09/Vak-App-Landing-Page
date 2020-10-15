@@ -1,17 +1,21 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .front {
   position: relative;
-  background-color: grey;
+  background-color: gray;
+  border-radius: 0px 0px 10px 10px;
   display: flex;
 }
 
 .front_image {
-  width: 100vw;
+  width: 100%;
   opacity: 0.8;
+  border-bottom: solid #5ac3cf 3px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 2px 8px black;
 }
 
 .logo {
@@ -35,9 +39,48 @@ body {
   width: 80%;
 }
 
+.p_first_container{
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
 .register_images {
   display: flex;
+  margin-top: 100px;
   justify-content: space-around;
+}
+
+.register_images_2{
+  display: flex;
+  margin: 50px 0 50px 0;
+  justify-content: space-around;
+}
+
+.image_logo_height{
+  height: 128px;
+}
+
+.reseaux_text{
+  text-align: center;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+.reseaux_sociaux{
+  display: flex;
+  margin: 70px 0 100px 0;
+  justify-content: space-around; 
+}
+
+.register_images p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.register_images_2 p{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .flex_div {
@@ -49,17 +92,25 @@ body {
   text-align: center;
 }
 
+.flex_text{
+  margin-top: 60px;
+}
+
 hr {
   width: 90%;
-  height: 2px;
+  height: 3px;
+  border: 0;
+  border-radius: 10px;
   background-color: #5ac3cf;
   color: #5ac3cf;
+  box-shadow: 1px 1px 1px gray;
 }
 
 .valeur {
   background-color: #5ac3cf;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .valeur_titre {
@@ -71,9 +122,15 @@ hr {
 .valeur_text {
   color: white;
 }
+
 .form {
   background-color: #5ac3cf;
-  padding: 8px 0px;
+  padding: 80px 100px;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.text_form{
+  margin-bottom: 60px;
 }
 
 .form > h2,
@@ -84,23 +141,52 @@ hr {
 
 .email {
   width: 50%;
-  border-radius: 10px;
+  max-width: 300px;
+  height: 30px;
+  border-radius: 15px;
   border: 0;
+  padding: 0 5px 0 5px;
+  min-width: 150px;
+}
+
+.valid{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 120px;
+  height: 30px;
+  border: solid white 1px;
+  border-radius: 15px;
+  transition: .25s;
+  background-color: white;
+}
+
+.valid:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
 }
 
 .form > form > div {
   text-align: center;
 }
 
-.form > form > div > input {
-  height: 3vh;
-}
-
 .footer {
   text-align: center;
 }
 
+.flex_images{
+  transition: 0.25s;
+}
+
+.flex_images:hover{
+  transform: scale(1.15,1.15);
+}
+
 @media screen and (max-width: 1000px) {
+  h2{
+    text-align: center;
+  }
   .text_image {
     font-size: 2rem;
     top: 30%;
@@ -108,8 +194,36 @@ hr {
   .register_images {
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
+  }
+  .register_images_2{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .image_logo_height{
+    height: auto;
+  }
+  .flex_text{
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
   .flex_div {
     width: 50%;
+  }
+  .p_first_container{
+    margin-bottom: 50px;
+  }
+  .reseaux_logo{
+    width: 70px;
+  }
+  .text_form{
+    font-size: 20px;
+  }
+  .valeur_titre {
+    margin-top: 60px;
+  }
+  .flex_div_margin{
+    margin-top: 30px;
   }
 }
