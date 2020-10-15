@@ -11,10 +11,10 @@
 <body>
   <main>
     <section class="front">
-      <img class="front_image" src="/images/national-cancer-institute-opti.jpg" alt="Photo de médecins" />
+      <img class="front_image" src="national-cancer-institute-opti.jpg" alt="Photo de médecins" />
       <h1 class="text_image">Rejoignez le mouvement Vakapp</h1>
     </section>
-    <img class="logo" src="/images/Logo_Vak.png" alt="Logo de VakApp" />
+    <img class="logo" src="Logo_Vak.png" alt="Logo de VakApp" />
     <section class="container">
       <article>
         <h2>L'application qui facilite les vacations</h2>
@@ -28,15 +28,15 @@
         <h2>Pour les vacataires ...</h2>
         <div class="register_images">
           <div class="flex_div">
-            <img class="flex_images" src="/images/post.png" alt="post" />
+            <img class="flex_images" src="post.png" alt="post" />
             <p class="flex_text">Inscrivez-vous</p>
           </div>
           <div class="flex_div">
-            <img class="flex_images" src="/images/medical-app.png" alt="medical-app" />
+            <img class="flex_images" src="medical-app.png" alt="medical-app" />
             <p class="flex_text">Trouvez une vacation adaptée à vous</p>
           </div>
           <div class="flex_div">
-            <img class="flex_images" src="/images/medal.png" alt="medal" />
+            <img class="flex_images" src="medal.png" alt="medal" />
             <p class="flex_text">Recevez des récompenses pour vos intéractions</p>
           </div>
         </div>
@@ -48,15 +48,15 @@
         <h2>Pour les structures ...</h2>
         <div class="register_images">
           <div class="flex_div">
-            <img src="/images/filter.png" alt="filter" />
+            <img src="filter.png" alt="filter" />
             <p class="flex_text">Utilisez les filtres et gagnez du temps</p>
           </div>
           <div class="flex_div">
-            <img src="/images/presentation.png" alt="presentation" />
+            <img src="presentation.png" alt="presentation" />
             <p class="flex_text">Trouvez le profil parfait pour vos besoins</p>
           </div>
           <div class="flex_div">
-            <img src="/images/puzzle.png" alt="puzzle" />
+            <img src="puzzle.png" alt="puzzle" />
             <p class="flex_text">Rencontrez le profil</p>
           </div>
         </div>
@@ -66,15 +66,15 @@
       <h2 class="valeur_titre">Nos valeurs</h2>
       <div class="register_images">
         <div class="flex_div">
-          <img src="/images/high-quality.png" alt="high-quality" />
+          <img src="high-quality.png" alt="high-quality" />
           <p class="valeur_text">Utilisez les filtres et gagnez du temps</p>
         </div>
         <div class="flex_div">
-          <img src="/images/solidarity.png" alt="solidarity" />
+          <img src="solidarity.png" alt="solidarity" />
           <p class="valeur_text">Trouvez le profil parfait pour vos besoins</p>
         </div>
         <div class="flex_div">
-          <img src="/images/trust.png" alt="trust" />
+          <img src="trust.png" alt="trust" />
           <p class="valeur_text">Rencontrez le profil</p>
         </div>
       </div>
@@ -82,10 +82,10 @@
     <section class="container">
       <div class="register_images">
         <div>
-          <a href="#"><img src="/images/facebook-2.png" alt="facebook-2" /></a>
+          <a href="#"><img src="facebook-2.png" alt="facebook-2" /></a>
         </div>
         <div>
-          <a href="#"><img src="/images/linkedin-logo.png" alt="linkedin-logo" /></a>
+          <a href="#"><img src="linkedin-logo.png" alt="linkedin-logo" /></a>
         </div>
       </div>
     </section>
